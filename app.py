@@ -8,7 +8,8 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import sklearn
-nltk.download('punkt_tab')
+nltk.download('punkt')
+nltk.download('stopwords')
 
 # vectorizer
 vectorizer_path = 'Vectorizer.pkl'
