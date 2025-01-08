@@ -51,7 +51,7 @@ def transform_text(text):
     return " ".join(y)
 
 
-@app.route('/')
+@app.route('/', methods=['POST'])
 def home():
     return render_template('index.html')
 
