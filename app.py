@@ -51,11 +51,11 @@ def transform_text(text):
     return " ".join(y)
 
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET','POST'])
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET','POST'])
 
 def predict():
 # preprocessing
